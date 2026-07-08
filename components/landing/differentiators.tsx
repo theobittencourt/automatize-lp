@@ -81,7 +81,7 @@ export function Differentiators() {
                 {COMPARISON_ROWS.map((row) => (
                   <tr
                     key={row.label}
-                    className="border-b border-border last:border-b-0"
+                    className="border-b border-border transition-colors duration-200 ease-premium last:border-b-0 hover:bg-muted/50"
                   >
                     <td className="py-3 pl-4 pr-4 font-medium">{row.label}</td>
                     <td className="py-3 pr-4 text-muted-foreground">

@@ -37,7 +37,7 @@ export function TestimonialVideo({
   return (
     <div
       className={cn(
-        "group relative shrink-0 overflow-hidden rounded-2xl border border-border bg-muted shadow-sm",
+        "group relative shrink-0 overflow-hidden rounded-2xl border border-border bg-muted shadow-sm transition-shadow duration-300 ease-premium hover:shadow-lg",
         className
       )}
       style={{ aspectRatio: aspect }}
@@ -66,7 +66,7 @@ export function TestimonialVideo({
           aria-label={`Ativar som — ${label}`}
           className="absolute inset-0 flex items-end justify-end bg-black/0 p-3 transition-colors hover:bg-black/10"
         >
-          <span className="flex size-9 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-transform group-hover:scale-105">
+          <span className="flex size-9 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-transform duration-300 ease-premium group-hover:scale-110">
             <Volume2 className="size-4" />
           </span>
         </button>

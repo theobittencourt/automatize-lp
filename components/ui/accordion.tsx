@@ -35,13 +35,13 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "flex flex-1 items-center justify-between gap-4 py-5 text-left font-medium transition-all hover:text-brand [&[data-state=open]>svg]:rotate-45",
+          "group flex flex-1 items-center justify-between gap-4 py-5 text-left font-medium transition-colors duration-200 ease-premium hover:text-brand",
           className
         )}
         {...props}
       >
         {children}
-        <Plus className="size-5 shrink-0 text-muted-foreground transition-transform duration-300" />
+        <Plus className="size-5 shrink-0 text-muted-foreground transition-transform duration-300 ease-premium group-hover:text-brand group-data-[state=open]:rotate-45" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

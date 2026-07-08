@@ -218,7 +218,7 @@ export function Features() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -12 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="text-center">
             <h3 className="font-heading text-2xl sm:text-3xl">{group.title}</h3>
@@ -233,8 +233,8 @@ export function Features() {
                   key={card.title}
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.35, delay: i * 0.08, ease: "easeOut" }}
-                  className="group rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  transition={{ duration: 0.4, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                  className="group rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 ease-premium hover:-translate-y-1 hover:shadow-lg"
                 >
                   <div className="flex size-11 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors group-hover:bg-brand group-hover:text-brand-foreground">
                     <Icon className="size-5" />

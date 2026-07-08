@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Check, Gift } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -82,13 +83,20 @@ export function Pricing() {
                 type="button"
                 onClick={() => setPeriod(item)}
                 className={cn(
-                  "rounded-full px-4 py-2 text-sm font-medium transition-colors",
+                  "relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 ease-premium",
                   period === item
-                    ? "bg-brand text-brand-foreground"
+                    ? "text-brand-foreground"
                     : "text-muted-foreground hover:text-foreground"
                 )}
               >
-                {item}
+                {period === item && (
+                  <motion.div
+                    layoutId="pricing-period-bg"
+                    className="absolute inset-0 rounded-full bg-brand"
+                    transition={{ type: "spring", duration: 0.5, bounce: 0.2 }}
+                  />
+                )}
+                <span className="relative z-10">{item}</span>
               </button>
             ))}
           </div>
@@ -99,10 +107,10 @@ export function Pricing() {
             <Reveal key={plan.name} delay={0.1 + i * 0.05}>
               <div
                 className={cn(
-                  "relative flex h-full flex-col rounded-2xl border bg-card p-6 sm:p-8",
+                  "relative flex h-full flex-col rounded-2xl border bg-card p-6 transition-all duration-300 ease-premium hover:-translate-y-1 sm:p-8",
                   plan.popular
-                    ? "border-brand shadow-lg shadow-brand/10"
-                    : "border-border shadow-sm"
+                    ? "border-brand shadow-lg shadow-brand/10 hover:shadow-xl hover:shadow-brand/15"
+                    : "border-border shadow-sm hover:shadow-lg"
                 )}
               >
                 {plan.popular && (

@@ -74,7 +74,7 @@ export function BeforeAfterSlider({
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
-        className="relative aspect-square select-none overflow-hidden cursor-ew-resize sm:aspect-video"
+        className="group relative aspect-square select-none overflow-hidden cursor-ew-resize sm:aspect-video"
       >
         {/* TODO: substituir pelos arquivos reais (hambúrguer amador/IA) quando disponíveis */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -109,7 +109,7 @@ export function BeforeAfterSlider({
           className="absolute inset-y-0 z-10 w-1 -translate-x-1/2 bg-white"
           style={{ left: `${position}%` }}
         >
-          <div className="absolute left-1/2 top-1/2 flex size-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-white shadow">
+          <div className="absolute left-1/2 top-1/2 flex size-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-white shadow transition-transform duration-300 ease-premium group-hover:scale-110">
             <GripVertical className="size-4 text-zinc-500" />
           </div>
         </div>

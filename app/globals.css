@@ -72,8 +72,10 @@
   --font-heading: var(--font-ivy-mode);
   --font-body: var(--font-urbane);
 
-  --animate-accordion-down: accordion-down 0.2s ease-out;
-  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-accordion-down: accordion-down 0.3s var(--ease-premium);
+  --animate-accordion-up: accordion-up 0.25s var(--ease-premium);
 
   @keyframes accordion-down {
     from {
@@ -96,6 +98,10 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
   }
   body {
     @apply bg-background text-foreground font-body;
