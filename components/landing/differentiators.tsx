@@ -6,7 +6,7 @@ const COMPARISON_ROWS = [
   {
     label: "Investimento Mensal",
     agency: "A partir de R$ 3.000",
-    automatize: "A partir de R$ 197,00",
+    automatize: "A partir de R$ 297,00",
   },
   {
     label: "Fidelidade",
@@ -58,10 +58,7 @@ export function Differentiators() {
 
       <Reveal delay={0.05} className="w-full">
         <div className="w-full rounded-3xl border border-border bg-card p-6 text-left shadow-sm sm:p-10">
-          <h3 className="font-body text-xl font-bold sm:text-2xl">
-            Chega de Amadorismo. A Escolha é Sua.
-          </h3>
-          <p className="mt-1 text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             Compare e veja por que a Automatize é a evolução do marketing.
           </p>
 

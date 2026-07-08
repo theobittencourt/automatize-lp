@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button";
 
 const NAV_ITEMS = [
   { label: "Funcionalidades", href: "#funcionalidades" },
-  { label: "Integrações", href: "#integracoes" },
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -107,14 +106,8 @@ export function Header() {
           <div className="hidden items-center gap-3 lg:flex">
             <ThemeToggle />
             <LanguageToggle />
-            <Link
-              href="/login"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Login
-            </Link>
-            <Button className="rounded-full bg-brand text-brand-foreground hover:bg-brand/90">
-              Teste 7 dias grátis
+            <Button asChild className="rounded-full bg-brand text-brand-foreground hover:bg-brand/90">
+              <Link href="/login">Login</Link>
             </Button>
           </div>
 
@@ -152,17 +145,10 @@ export function Header() {
                 <div className="mt-2 flex items-center gap-2 border-t border-border pt-3">
                   <ThemeToggle />
                   <LanguageToggle />
-                  <Link
-                    href="/login"
-                    className="ml-1 text-sm font-medium text-muted-foreground hover:text-foreground"
-                  >
-                    Login
-                  </Link>
+                  <Button asChild className="ml-1 w-full rounded-full bg-brand text-brand-foreground hover:bg-brand/90">
+                    <Link href="/login">Login</Link>
+                  </Button>
                 </div>
-
-                <Button className="mt-2 w-full rounded-full bg-brand text-brand-foreground hover:bg-brand/90">
-                  Teste 7 dias grátis
-                </Button>
               </div>
             </motion.div>
           )}

@@ -3,7 +3,6 @@ import { Hero } from "@/components/landing/hero";
 import { SocialProof } from "@/components/landing/social-proof";
 import { PhotoComparison } from "@/components/landing/photo-comparison";
 import { Features } from "@/components/landing/features";
-import { Integrations } from "@/components/landing/integrations";
 import { Differentiators } from "@/components/landing/differentiators";
 import { TrialChallenge } from "@/components/landing/trial-challenge";
 import { Faq } from "@/components/landing/faq";
@@ -18,12 +17,6 @@ export default function Home() {
         <SocialProof />
         <PhotoComparison />
         <Features />
-        {/*
-          SUGESTÃO (fora do briefing original): seção de integrações.
-          Fica a critério de aprovação do cliente — se ele não quiser,
-          remover este bloco e o import de Integrations acima.
-        */}
-        <Integrations />
         <Differentiators />
         <TrialChallenge />
         <Faq />

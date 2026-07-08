@@ -16,7 +16,7 @@ const FAQ_ITEMS = [
       "Porque a IA não tem ego. Não tem preguiça. Não tem \"só não\". Ela executa o material estratégico, baseado em dados, 100% dos meses. Foi treinada por humanos de elite, para você não precisar pagar o salário deles.",
   },
   {
-    question: "Meu plano a partir de R$ 197/mês não é muito barato? Qual é a pegadinha?",
+    question: "Meu plano a partir de R$ 297/mês não é muito barato? Qual é a pegadinha?",
     answer:
       "Não é barato, é eficiente. Nossa estrutura de custos é radicalmente menor: não tem escritórios caros, nem uma hierarquia inchada de diretores. Repassamos essa economia para você. A única \"pegadinha\" é que você vai se perguntar por que pagou tão caro por tanto tempo.",
   },

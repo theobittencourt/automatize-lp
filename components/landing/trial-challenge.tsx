@@ -42,12 +42,9 @@ export function TrialChallenge() {
               backgroundPosition: "center",
             }}
           >
-            <h3 className="font-body text-xl font-bold sm:text-2xl">
-              Aceite nosso desafio: Troque sua agência por nós por 7 dias.
-            </h3>
-            <p className="mt-1 text-sm text-white/70">
+            <p className="text-sm text-white/70">
               É simples. Você clica no botão abaixo, seu plano a partir de R$
-              197/mês e a nossa IA começa a trabalhar imediatamente
+              297/mês e a nossa IA começa a trabalhar imediatamente
             </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-3">
