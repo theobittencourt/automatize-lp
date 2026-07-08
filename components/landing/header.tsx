@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 const NAV_ITEMS = [
   { label: "Funcionalidades", href: "#funcionalidades" },
   { label: "Diferenciais", href: "#diferenciais" },
+  { label: "Planos", href: "#planos" },
   { label: "FAQ", href: "#faq" },
 ];
 

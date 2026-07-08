@@ -6,6 +6,7 @@ const LINK_COLUMNS = [
     items: [
       { label: "Funcionalidades", href: "#funcionalidades" },
       { label: "Diferenciais", href: "#diferenciais" },
+      { label: "Planos", href: "#planos" },
       { label: "FAQ", href: "#faq" },
     ],
   },
