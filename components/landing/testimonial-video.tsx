@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 type TestimonialVideoProps = {
   src: string;
   poster: string;
-  aspect: string;
+  aspect?: string;
   label: string;
   className?: string;
 };
@@ -40,7 +40,7 @@ export function TestimonialVideo({
         "group relative shrink-0 overflow-hidden rounded-2xl border border-border bg-muted shadow-sm transition-shadow duration-300 ease-premium hover:shadow-lg",
         className
       )}
-      style={{ aspectRatio: aspect }}
+      style={aspect ? { aspectRatio: aspect } : undefined}
     >
       <video
         ref={videoRef}
