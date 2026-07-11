@@ -1,0 +1,321 @@
+{
+  "Metadata": {
+    "title": "Automatize Marketing | AI-powered Marketing and Ads for restaurants",
+    "description": "A system that handles all your Marketing and Ads with AI. Try it free for 7 days."
+  },
+  "Header": {
+    "nav": {
+      "funcionalidades": "Features",
+      "diferenciais": "Why Us",
+      "planos": "Pricing",
+      "faq": "FAQ"
+    },
+    "login": "Login",
+    "themeToggle": "Toggle theme",
+    "languageToggle": "Toggle language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Hero": {
+    "headline": "The smartest way to increase your <highlight>orders</highlight> and your <highlight2>profit</highlight2>",
+    "subtitle": "Here we bring together strategy, marketing and sales in a simple and affordable way so you get more profit, and less stress from services that promise and don't deliver.",
+    "ctaPrimary": "Try free for 7 days",
+    "ctaSecondary": "Talk to a specialist",
+    "guarantees": {
+      "trial": "7 days free",
+      "noFee": "No cancellation fee",
+      "easySetup": "Effortless setup"
+    }
+  },
+  "SocialProof": {
+    "heading": "Over <highlight>500 restaurants</highlight> trust Automatize",
+    "paragraph": "They also used to pay a lot for amateur marketing services that generated no results. Today they get <highlight>+orders</highlight> and <highlight2>+profit</highlight2>, paying a lot less.",
+    "logoAlt": "Automatize client logo",
+    "carousel": {
+      "prev": "Previous testimonial",
+      "next": "Next testimonial",
+      "goTo": "Go to testimonial group {number}",
+      "testimonial": "Client testimonial {number}",
+      "activateSound": "Turn on sound — {label}"
+    }
+  },
+  "PhotoComparison": {
+    "heading": "From your phone to the menu: your amateur photo becomes professional art",
+    "paragraph": "No photographer, no studio. Our AI turns the photo you take on your phone into a sales-ready image, keeping your dish's real ingredients. Drag the divider to compare.",
+    "beforeLabel": "Amateur Photo",
+    "afterLabel": "Created by AI"
+  },
+  "Features": {
+    "heading": "Everything your restaurant needs to sell, profit and dominate the market",
+    "subtitle": "No days of waiting, no silly mistakes, no lack of results. Personalized for your restaurant.",
+    "groups": {
+      "trafego": {
+        "badge": "Paid Ads",
+        "title": "Paid Ads with AI",
+        "subtitle": "Creates, publishes and optimizes all your ad campaigns automatically",
+        "cards": {
+          "rapido": {
+            "title": "Fast as instant noodles",
+            "description": "Launch your ads in a simple way in under 5 minutes"
+          },
+          "resultado": {
+            "title": "Way more results",
+            "description": "The AI analyzes your campaign in real time, and applies the best optimizations to generate results for you"
+          },
+          "leigos": {
+            "title": "For beginners",
+            "description": "Just set your budget, our AI handles the entire technical side"
+          }
+        }
+      },
+      "designer": {
+        "badge": "Designer",
+        "title": "Designer",
+        "subtitle": "Request professional artwork, improve your photos and standardize your menu",
+        "cards": {
+          "fotografo": {
+            "title": "No photographer?",
+            "description": "Take a photo with your phone, upload it to Automatize, and get an attractive, realistic photo keeping all your real ingredients"
+          },
+          "artes": {
+            "title": "Professional artwork",
+            "description": "Create artwork to promote your new products and promotions"
+          },
+          "personalizacao": {
+            "title": "Customization",
+            "description": "Images created following 100% of your brand colors, keeping it consistent"
+          }
+        }
+      },
+      "social": {
+        "badge": "Social Media",
+        "title": "Social Media",
+        "subtitle": "Organize and schedule all your posts without any hassle",
+        "cards": {
+          "organizacao": {
+            "title": "More organization",
+            "description": "Never forget to post on your Instagram again"
+          },
+          "metricas": {
+            "title": "Metrics that make sense",
+            "description": "No complex reports or numbers — know exactly what to analyze and what worked"
+          },
+          "clareza": {
+            "title": "Clarity on what works",
+            "description": "Learn how to optimize your content by prioritizing exactly what works"
+          }
+        }
+      },
+      "masterclass": {
+        "badge": "Masterclass",
+        "title": "Masterclass",
+        "subtitle": "Learn from those who really know!",
+        "cards": {
+          "aulas": {
+            "title": "Exclusive classes",
+            "description": "Get access to recorded and live classes with big names in the industry"
+          },
+          "evolucao": {
+            "title": "Continuous growth",
+            "description": "Get valuable tips and guidance. Everything you need to grow in one place"
+          },
+          "aplique": {
+            "title": "Apply right away",
+            "description": "Learned it? Apply it now. Have doubts? Your mentor answers."
+          }
+        }
+      },
+      "roteiros": {
+        "badge": "Scripts",
+        "title": "Script Generator",
+        "subtitle": "Create videos and posts in a simple way that convert and go viral",
+        "cards": {
+          "viralize": {
+            "title": "Go viral",
+            "description": "Get a professional script that grabs attention and connects with your customer"
+          },
+          "profissionalismo": {
+            "title": "Professionalism",
+            "description": "Know exactly how to produce truly original, professional content"
+          },
+          "desejo": {
+            "title": "Create more desire",
+            "description": "A video structure designed to drive your customer straight to your menu"
+          }
+        }
+      }
+    }
+  },
+  "Differentiators": {
+    "heading": "No More Amateur Hour. The Choice Is Yours.",
+    "cardParagraph": "Compare and see why Automatize is the evolution of marketing.",
+    "table": {
+      "colFeature": "What you get",
+      "colAgency": "Traditional Agency",
+      "colAutomatize": "Automatize Marketing",
+      "rows": {
+        "investimento": {
+          "label": "Monthly Investment",
+          "agency": "Starting at R$ 3,000",
+          "automatize": "Starting at R$ 297.00"
+        },
+        "fidelidade": {
+          "label": "Contract lock-in",
+          "agency": "Yes, usually 12 months",
+          "automatize": "None! No lock-in"
+        },
+        "reunioes": {
+          "label": "Meetings",
+          "agency": "Endless",
+          "automatize": "Streamlined"
+        },
+        "cancelamento": {
+          "label": "Cancellation",
+          "agency": "Termination fee",
+          "automatize": "Anytime you want"
+        },
+        "implementacao": {
+          "label": "Setup",
+          "agency": "Weeks/Months",
+          "automatize": "Immediate"
+        },
+        "resultados": {
+          "label": "Results",
+          "agency": "Scarce",
+          "automatize": "Predictable"
+        },
+        "comecaNoAr": {
+          "label": "Goes live",
+          "agency": "Days",
+          "automatize": "In under 24h"
+        },
+        "adaptacao": {
+          "label": "Adaptation",
+          "agency": "You adapt",
+          "automatize": "AI adapts to you"
+        }
+      }
+    },
+    "tagline1": "Everything an agency does, only better.",
+    "tagline2": "And of course, without the agency price tag.",
+    "guarantees": {
+      "trial": "7-day free trial",
+      "support": "24/7 support via WhatsApp",
+      "noFee": "No cancellation fee",
+      "setup": "Setup in minutes"
+    }
+  },
+  "Pricing": {
+    "heading": "Flexible plans for your growth",
+    "subtitle": "Monthly billing on all plans — choose the commitment that best fits your cash flow.",
+    "periods": {
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "biannual": "Biannual",
+      "annual": "Annual"
+    },
+    "popularBadge": "Most popular",
+    "perMonth": "/ month",
+    "noCommitment": "No commitment, cancel anytime",
+    "freeTrial": "7 days free to try",
+    "subscribeTo": "Subscribe to {plan}",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "To put your marketing on autopilot",
+        "features": {
+          "posts": "25 posts",
+          "aiCaptions": "AI-generated captions",
+          "emailSupport": "Email support",
+          "autoAds": "Automatic paid ads"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "To accelerate results with paid ads",
+        "features": {
+          "everythingStarter": "Everything in Starter",
+          "campaignSetup": "First campaign setup",
+          "whatsappSupport": "Dedicated support via WhatsApp"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "description": "For teams that want strategic support",
+        "features": {
+          "everythingPro": "Everything in Pro",
+          "accountManager": "Dedicated account manager",
+          "monthlyMeeting": "Up to 1 monthly meeting"
+        }
+      }
+    }
+  },
+  "TrialChallenge": {
+    "heading": "Take our challenge: Swap your agency for us for 7 days.",
+    "paragraph": "It's simple. Click the button below, get your plan starting at R$ 297/month and our AI starts working right away",
+    "steps": {
+      "onboarding": {
+        "title": "Instant Onboarding (5 min)",
+        "description": "Our AI asks the right questions to deeply understand your business"
+      },
+      "execucao": {
+        "title": "Fast Execution (1 hour)",
+        "description": "You get your marketing plan, your first posts and your ad campaign already mapped out"
+      },
+      "analise": {
+        "title": "Value Review (Day 7)",
+        "description": "You'll see real results, strategic gains and execution like you've never had before"
+      }
+    },
+    "guarantee": "If the answer is \"NO\", just send us a single message. We refund 100% of what you paid, no questions asked, no red tape.",
+    "cta": "I accept the 7-day challenge",
+    "risk": "The risk is 100% ours. The chance of finally having marketing that works is 100% yours."
+  },
+  "Faq": {
+    "heading": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know before getting started.",
+    "supportCta": "I want to talk to support",
+    "items": {
+      "confianca": {
+        "question": "Why would I trust an AI instead of a human?",
+        "answer": "Because AI has no ego. It doesn't get lazy. It doesn't just \"not feel like it\". It executes the strategic work, based on data, 100% of the months. It was trained by top-tier experts, so you don't have to pay their salary."
+      },
+      "preco": {
+        "question": "Isn't my plan starting at R$ 297/month too cheap? What's the catch?",
+        "answer": "It's not cheap, it's efficient. Our cost structure is radically leaner: no expensive offices, no bloated layers of directors. We pass that savings on to you. The only \"catch\" is you'll wonder why you paid so much for so long."
+      },
+      "agenciaAtual": {
+        "question": "What if I already have an agency?",
+        "answer": "Perfect. Take the 7-Day Challenge in secret. Compare what we deliver in one week with what they delivered last month. The decision becomes obvious."
+      },
+      "trafegoPago": {
+        "question": "Is the paid ad spend included?",
+        "answer": "No. Your subscription fee and your paid ad spend are separate. You set your own budget for Google and Meta ads, and it's 100% yours, with no middleman from our team."
+      }
+    }
+  },
+  "Footer": {
+    "tagline": "Top-level performance demands precision.",
+    "columns": {
+      "links": "Links",
+      "contato": "Contact",
+      "legal": "Legal"
+    },
+    "nav": {
+      "funcionalidades": "Features",
+      "diferenciais": "Why Us",
+      "planos": "Pricing",
+      "faq": "FAQ"
+    },
+    "contato": {
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "instagram": "Instagram"
+    },
+    "legal": {
+      "terms": "Terms of use",
+      "privacy": "Privacy policy"
+    },
+    "copyright": "© {year} Automatize Marketing. All rights reserved."
+  }
+}

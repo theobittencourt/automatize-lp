@@ -1,0 +1,321 @@
+{
+  "Metadata": {
+    "title": "Automatize Marketing | Marketing e Tráfego com IA para restaurantes",
+    "description": "Sistema que cuida de todo o seu Marketing e Tráfego com IA. Teste por 7 dias grátis."
+  },
+  "Header": {
+    "nav": {
+      "funcionalidades": "Funcionalidades",
+      "diferenciais": "Diferenciais",
+      "planos": "Planos",
+      "faq": "FAQ"
+    },
+    "login": "Login",
+    "themeToggle": "Alternar tema",
+    "languageToggle": "Alternar idioma",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "Hero": {
+    "headline": "A forma mais inteligente de aumentar seus <highlight>pedidos</highlight> e o seu <highlight2>lucro</highlight2>",
+    "subtitle": "Aqui unimos estratégia, marketing e vendas de forma descomplicada e acessível para que você obtenha mais lucro, e menos estresse com serviços que prometem e não entregam.",
+    "ctaPrimary": "Teste por 7 dias grátis",
+    "ctaSecondary": "Falar com um especialista",
+    "guarantees": {
+      "trial": "7 dias grátis",
+      "noFee": "Sem multa de cancelamento",
+      "easySetup": "Implementação descomplicada"
+    }
+  },
+  "SocialProof": {
+    "heading": "Mais de <highlight>500 restaurantes</highlight> confiam na Automatize",
+    "paragraph": "Eles também pagavam caro por serviços de marketing amadores que não geravam resultados. Hoje conseguem <highlight>+pedidos</highlight> e <highlight2>+lucro</highlight2>, pagando muito menos.",
+    "logoAlt": "Logo de cliente Automatize",
+    "carousel": {
+      "prev": "Depoimento anterior",
+      "next": "Próximo depoimento",
+      "goTo": "Ir para o grupo de depoimentos {number}",
+      "testimonial": "Depoimento de cliente {number}",
+      "activateSound": "Ativar som — {label}"
+    }
+  },
+  "PhotoComparison": {
+    "heading": "Do celular ao cardápio: sua foto amadora vira arte profissional",
+    "paragraph": "Sem fotógrafo, sem estúdio. Nossa IA transforma a foto que você tira no celular em uma imagem pronta para vender, mantendo os ingredientes reais do seu prato. Arraste o divisor para comparar.",
+    "beforeLabel": "Foto Amadora",
+    "afterLabel": "Criado pela IA"
+  },
+  "Features": {
+    "heading": "Tudo que seu restaurante precisa para vender, lucrar e dominar o mercado",
+    "subtitle": "Sem demorar dias, sem erros bobos, sem faltas de resultado. Para o seu restaurante de forma personalizada.",
+    "groups": {
+      "trafego": {
+        "badge": "Tráfego Pago",
+        "title": "Tráfego Pago com IA",
+        "subtitle": "Cria, publica e otimiza todas as suas campanhas de anúncios automaticamente",
+        "cards": {
+          "rapido": {
+            "title": "Rápido como um miojo",
+            "description": "Suba seus anúncios de forma simples em menos de 5 minutos"
+          },
+          "resultado": {
+            "title": "Muito mais resultado",
+            "description": "A IA analisa a sua campanha em tempo real, e aplica as melhores otimizações para te gerar resultados"
+          },
+          "leigos": {
+            "title": "Para leigos",
+            "description": "Defina apenas o seu orçamento, toda parte técnica deixa com a nossa IA"
+          }
+        }
+      },
+      "designer": {
+        "badge": "Designer",
+        "title": "Designer",
+        "subtitle": "Solicite artes profissionais, melhore suas fotos e padronize o seu cardápio",
+        "cards": {
+          "fotografo": {
+            "title": "Ficou sem fotógrafo?",
+            "description": "Tire uma foto do seu celular, adicione na Automatize, e tenha uma foto atrativa e realista mantendo todos os seus ingredientes"
+          },
+          "artes": {
+            "title": "Artes profissionais",
+            "description": "Crie artes para divulgar seus novos produtos e ações promocionais"
+          },
+          "personalizacao": {
+            "title": "Personalização",
+            "description": "Imagens criadas seguindo 100% das cores da sua marca, mantendo o padrão"
+          }
+        }
+      },
+      "social": {
+        "badge": "Social Media",
+        "title": "Social Media",
+        "subtitle": "Organize, e programe todas as suas postagens sem complicação",
+        "cards": {
+          "organizacao": {
+            "title": "Mais organização",
+            "description": "Nunca mais esqueça de realizar uma postagem em seu Instagram"
+          },
+          "metricas": {
+            "title": "Métricas que fazem sentido",
+            "description": "Sem relatórios e números complexos, saiba exatamente o que analisar e o que deu certo"
+          },
+          "clareza": {
+            "title": "Clareza do que funciona",
+            "description": "Saiba como otimizar os seus conteúdos priorizando exatamente aquilo que funciona"
+          }
+        }
+      },
+      "masterclass": {
+        "badge": "Masterclass",
+        "title": "Masterclass",
+        "subtitle": "Aprenda com quem realmente entende!",
+        "cards": {
+          "aulas": {
+            "title": "Aulas exclusivas",
+            "description": "Tenha acesso a aulas gravadas e ao vivo com grandes nomes do mercado"
+          },
+          "evolucao": {
+            "title": "Evolução contínua",
+            "description": "Tenha dicas e direcionamentos valiosos. Tudo que você precisa para crescer em um só lugar"
+          },
+          "aplique": {
+            "title": "Aplique na hora",
+            "description": "Aprendeu? Aplique agora. Teve dúvidas? Seu mentor responde."
+          }
+        }
+      },
+      "roteiros": {
+        "badge": "Roteiros",
+        "title": "Gerador de Roteiros",
+        "subtitle": "Crie vídeos e postagens de forma simples que convertam e viralizem",
+        "cards": {
+          "viralize": {
+            "title": "Viralize",
+            "description": "Obtenha um roteiro profissional que prende a atenção e conecta com o seu cliente"
+          },
+          "profissionalismo": {
+            "title": "Profissionalismo",
+            "description": "Saiba exatamente como produzir um conteúdo realmente original e profissional"
+          },
+          "desejo": {
+            "title": "Gere mais desejo",
+            "description": "Uma estrutura de vídeos pensada para atrair seu cliente direto para o seu cardápio"
+          }
+        }
+      }
+    }
+  },
+  "Differentiators": {
+    "heading": "Chega de Amadorismo. A Escolha é Sua.",
+    "cardParagraph": "Compare e veja por que a Automatize é a evolução do marketing.",
+    "table": {
+      "colFeature": "O que você recebe",
+      "colAgency": "Agência Tradicional",
+      "colAutomatize": "Automatize Marketing",
+      "rows": {
+        "investimento": {
+          "label": "Investimento Mensal",
+          "agency": "A partir de R$ 3.000",
+          "automatize": "A partir de R$ 297,00"
+        },
+        "fidelidade": {
+          "label": "Fidelidade",
+          "agency": "Sim, geralmente 12 meses",
+          "automatize": "Não! Sem fidelidade"
+        },
+        "reunioes": {
+          "label": "Reuniões",
+          "agency": "Intermináveis",
+          "automatize": "Otimizadas"
+        },
+        "cancelamento": {
+          "label": "Cancelamento",
+          "agency": "Multa rescisória",
+          "automatize": "Quando quiser"
+        },
+        "implementacao": {
+          "label": "Implementação",
+          "agency": "Semanas/Meses",
+          "automatize": "Imediata"
+        },
+        "resultados": {
+          "label": "Resultados",
+          "agency": "Escassos",
+          "automatize": "Previsíveis"
+        },
+        "comecaNoAr": {
+          "label": "Começa no ar",
+          "agency": "Dias",
+          "automatize": "Em menos de 24h"
+        },
+        "adaptacao": {
+          "label": "Adaptação",
+          "agency": "Você se adapta",
+          "automatize": "IA se adapta a você"
+        }
+      }
+    },
+    "tagline1": "Tudo que uma agência faz, só que melhor.",
+    "tagline2": "E claro, sem o preço de agência.",
+    "guarantees": {
+      "trial": "7 dias de teste grátis",
+      "support": "Suporte 24/7 via WhatsApp",
+      "noFee": "Sem multa de cancelamento",
+      "setup": "Implementação em minutos"
+    }
+  },
+  "Pricing": {
+    "heading": "Planos flexíveis para o seu crescimento",
+    "subtitle": "Cobrança mensal em todos os planos — escolha o compromisso que melhor se encaixa no seu fluxo de caixa.",
+    "periods": {
+      "monthly": "Mensal",
+      "quarterly": "Trimestral",
+      "biannual": "Semestral",
+      "annual": "Anual"
+    },
+    "popularBadge": "Mais popular",
+    "perMonth": "/ mês",
+    "noCommitment": "Sem compromisso, cancele quando quiser",
+    "freeTrial": "7 dias grátis para testar",
+    "subscribeTo": "Assinar {plan}",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Para colocar seu marketing no piloto automático",
+        "features": {
+          "posts": "25 postagens",
+          "aiCaptions": "Legendas com IA",
+          "emailSupport": "Suporte por e-mail",
+          "autoAds": "Tráfego pago automático"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Para acelerar resultados com tráfego pago",
+        "features": {
+          "everythingStarter": "Tudo do Starter",
+          "campaignSetup": "Setup da primeira campanha",
+          "whatsappSupport": "Suporte dedicado via WhatsApp"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "description": "Para times que querem suporte estratégico",
+        "features": {
+          "everythingPro": "Tudo do Pro",
+          "accountManager": "Gerente de contas dedicado",
+          "monthlyMeeting": "Até 1 reunião mensal"
+        }
+      }
+    }
+  },
+  "TrialChallenge": {
+    "heading": "Aceite nosso desafio: Troque sua agência por nós por 7 dias.",
+    "paragraph": "É simples. Você clica no botão abaixo, seu plano a partir de R$ 297/mês e a nossa IA começa a trabalhar imediatamente",
+    "steps": {
+      "onboarding": {
+        "title": "Onboarding Imediato (5 min)",
+        "description": "Nossa IA faz as perguntas certas para entender seu negócio a fundo"
+      },
+      "execucao": {
+        "title": "Execução Rápida (1 hora)",
+        "description": "Você recebe seu plano de marketing, seus primeiros posts e sua campanha de tráfego já traçada"
+      },
+      "analise": {
+        "title": "Análise de Valor (7º dia)",
+        "description": "Você vai ver os resultados reais, ganhos estratégicos e a execução do que jamais recebeu"
+      }
+    },
+    "guarantee": "Se a resposta for \"NÃO\", você nos envia uma única mensagem. Nós devolvemos 100% do valor pago no fim, sem perguntas, sem burocracia.",
+    "cta": "Aceito o desafio dos 7 dias",
+    "risk": "O risco é 100% nosso. A chance de ter um marketing que funcione é 100% sua."
+  },
+  "Faq": {
+    "heading": "Perguntas Frequentes",
+    "subtitle": "Tudo o que você precisa saber antes de começar.",
+    "supportCta": "Quero tirar dúvidas com o suporte",
+    "items": {
+      "confianca": {
+        "question": "Por que eu confiaria em uma IA e não em um humano?",
+        "answer": "Porque a IA não tem ego. Não tem preguiça. Não tem \"só não\". Ela executa o material estratégico, baseado em dados, 100% dos meses. Foi treinada por humanos de elite, para você não precisar pagar o salário deles."
+      },
+      "preco": {
+        "question": "Meu plano a partir de R$ 297/mês não é muito barato? Qual é a pegadinha?",
+        "answer": "Não é barato, é eficiente. Nossa estrutura de custos é radicalmente menor: não tem escritórios caros, nem uma hierarquia inchada de diretores. Repassamos essa economia para você. A única \"pegadinha\" é que você vai se perguntar por que pagou tão caro por tanto tempo."
+      },
+      "agenciaAtual": {
+        "question": "E se eu já tiver uma agência?",
+        "answer": "Perfeito. Faça o Desafio dos 7 Dias em segredo. Compare o que nós entregamos em uma semana com o que eles entregaram no último mês. A decisão se torna óbvia."
+      },
+      "trafegoPago": {
+        "question": "O valor do tráfego pago está incluso?",
+        "answer": "Não. O valor da assinatura e o investimento em tráfego pago são separados. Você define o orçamento de anúncios no Google e no Meta, e ele é 100% seu, sem intermediação da nossa equipe."
+      }
+    }
+  },
+  "Footer": {
+    "tagline": "O alto nível exige precisão.",
+    "columns": {
+      "links": "Links",
+      "contato": "Contato",
+      "legal": "Legal"
+    },
+    "nav": {
+      "funcionalidades": "Funcionalidades",
+      "diferenciais": "Diferenciais",
+      "planos": "Planos",
+      "faq": "FAQ"
+    },
+    "contato": {
+      "whatsapp": "WhatsApp",
+      "email": "E-mail",
+      "instagram": "Instagram"
+    },
+    "legal": {
+      "terms": "Termos de uso",
+      "privacy": "Política de privacidade"
+    },
+    "copyright": "© {year} Automatize Marketing. Todos os direitos reservados."
+  }
+}

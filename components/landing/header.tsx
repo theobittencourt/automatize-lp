@@ -3,20 +3,26 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Globe, Menu, Moon, Sun, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
-const NAV_ITEMS = [
-  { label: "Funcionalidades", href: "#funcionalidades" },
-  { label: "Diferenciais", href: "#diferenciais" },
-  { label: "Planos", href: "#planos" },
-  { label: "FAQ", href: "#faq" },
-];
+function useNavItems() {
+  const t = useTranslations("Header.nav");
+  return [
+    { label: t("funcionalidades"), href: "#funcionalidades" },
+    { label: t("diferenciais"), href: "#diferenciais" },
+    { label: t("planos"), href: "#planos" },
+    { label: t("faq"), href: "#faq" },
+  ];
+}
 
 function ThemeToggle() {
+  const t = useTranslations("Header");
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -31,7 +37,7 @@ function ThemeToggle() {
   return (
     <button
       type="button"
-      aria-label="Alternar tema"
+      aria-label={t("themeToggle")}
       onClick={() => setTheme(isDark ? "light" : "dark")}
       className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
     >
@@ -41,19 +47,32 @@ function ThemeToggle() {
 }
 
 function LanguageToggle() {
+  const t = useTranslations("Header");
+  const locale = useLocale();
+  const router = useRouter();
+
+  function toggleLocale() {
+    const next = locale === "pt" ? "en" : "pt";
+    document.cookie = `NEXT_LOCALE=${next}; path=/; max-age=31536000`;
+    router.refresh();
+  }
+
   return (
-    // TODO: ligar à troca de locale real quando o roteamento next-intl for configurado
     <button
       type="button"
-      aria-label="Alternar idioma"
-      className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+      aria-label={t("languageToggle")}
+      onClick={toggleLocale}
+      className="flex h-9 items-center gap-1 rounded-full px-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
     >
       <Globe className="size-4" />
+      <span className="text-xs font-medium uppercase">{locale}</span>
     </button>
   );
 }
 
 export function Header() {
+  const t = useTranslations("Header");
+  const navItems = useNavItems();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -93,7 +112,7 @@ export function Header() {
           </Link>
 
           <div className="hidden items-center gap-8 lg:flex">
-            {NAV_ITEMS.map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -108,13 +127,13 @@ export function Header() {
             <ThemeToggle />
             <LanguageToggle />
             <Button asChild className="rounded-full bg-brand text-brand-foreground hover:bg-brand/90">
-              <Link href="/login">Login</Link>
+              <Link href="/login">{t("login")}</Link>
             </Button>
           </div>
 
           <button
             type="button"
-            aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
+            aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
             onClick={() => setMobileOpen((v) => !v)}
             className="flex size-9 items-center justify-center rounded-full text-foreground lg:hidden"
           >
@@ -132,7 +151,7 @@ export function Header() {
               className="overflow-hidden lg:hidden"
             >
               <div className="mb-3 flex flex-col gap-1 rounded-3xl border border-border bg-background p-4 shadow-lg">
-                {NAV_ITEMS.map((item) => (
+                {navItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
@@ -147,7 +166,7 @@ export function Header() {
                   <ThemeToggle />
                   <LanguageToggle />
                   <Button asChild className="ml-1 w-full rounded-full bg-brand text-brand-foreground hover:bg-brand/90">
-                    <Link href="/login">Login</Link>
+                    <Link href="/login">{t("login")}</Link>
                   </Button>
                 </div>
               </div>

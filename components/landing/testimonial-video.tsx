@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { Volume2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 
@@ -20,6 +21,7 @@ export function TestimonialVideo({
   label,
   className,
 }: TestimonialVideoProps) {
+  const t = useTranslations("SocialProof.carousel");
   const videoRef = useRef<HTMLVideoElement>(null);
   const [active, setActive] = useState(false);
 
@@ -63,7 +65,7 @@ export function TestimonialVideo({
         <button
           type="button"
           onClick={handleActivate}
-          aria-label={`Ativar som — ${label}`}
+          aria-label={t("activateSound", { label })}
           className="absolute inset-0 flex items-end justify-end bg-black/0 p-3 transition-colors hover:bg-black/10"
         >
           <span className="flex size-9 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-transform duration-300 ease-premium group-hover:scale-110">

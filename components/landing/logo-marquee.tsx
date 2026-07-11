@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 
@@ -46,6 +47,7 @@ function logoSrc(file: string) {
 }
 
 function LogoGroup({ innerRef }: { innerRef?: React.Ref<HTMLDivElement> }) {
+  const t = useTranslations("SocialProof");
   return (
     <div ref={innerRef} className="flex shrink-0 items-center gap-16">
       {CLIENT_LOGOS.map((logo) => (
@@ -53,7 +55,7 @@ function LogoGroup({ innerRef }: { innerRef?: React.Ref<HTMLDivElement> }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoSrc(logo.file)}
-            alt="Logo de cliente Automatize"
+            alt={t("logoAlt")}
             className={cn(
               "h-full w-auto max-w-none object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0",
               logo.invert === "dark" && "dark:invert",

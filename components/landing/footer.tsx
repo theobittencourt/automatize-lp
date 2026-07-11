@@ -1,35 +1,41 @@
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
-const LINK_COLUMNS = [
-  {
-    title: "Links",
-    items: [
-      { label: "Funcionalidades", href: "#funcionalidades" },
-      { label: "Diferenciais", href: "#diferenciais" },
-      { label: "Planos", href: "#planos" },
-      { label: "FAQ", href: "#faq" },
-    ],
-  },
-  {
-    title: "Contato",
-    items: [
-      // TODO: confirmar canais oficiais de contato
-      { label: "WhatsApp", href: "#" },
-      { label: "E-mail", href: "#" },
-      { label: "Instagram", href: "#" },
-    ],
-  },
-  {
-    title: "Legal",
-    items: [
-      // TODO: confirmar links reais de termos/privacidade
-      { label: "Termos de uso", href: "#" },
-      { label: "Política de privacidade", href: "#" },
-    ],
-  },
-];
+export async function Footer() {
+  const t = await getTranslations("Footer");
 
-export function Footer() {
+  const linkColumns = [
+    {
+      key: "links",
+      title: t("columns.links"),
+      items: [
+        { label: t("nav.funcionalidades"), href: "#funcionalidades" },
+        { label: t("nav.diferenciais"), href: "#diferenciais" },
+        { label: t("nav.planos"), href: "#planos" },
+        { label: t("nav.faq"), href: "#faq" },
+      ],
+    },
+    {
+      key: "contato",
+      title: t("columns.contato"),
+      items: [
+        // TODO: confirmar canais oficiais de contato
+        { label: t("contato.whatsapp"), href: "#" },
+        { label: t("contato.email"), href: "#" },
+        { label: t("contato.instagram"), href: "#" },
+      ],
+    },
+    {
+      key: "legal",
+      title: t("columns.legal"),
+      items: [
+        // TODO: confirmar links reais de termos/privacidade
+        { label: t("legal.terms"), href: "#" },
+        { label: t("legal.privacy"), href: "#" },
+      ],
+    },
+  ];
+
   return (
     <footer
       className="relative overflow-hidden bg-zinc-950 text-zinc-300"
@@ -49,12 +55,12 @@ export function Footer() {
             className="h-9 w-auto object-contain"
           />
           <p className="font-heading text-sm italic text-zinc-400">
-            Marketing e tráfego, no piloto automático.
+            {t("tagline")}
           </p>
         </div>
 
-        {LINK_COLUMNS.map((column) => (
-          <div key={column.title} className="flex flex-col gap-3">
+        {linkColumns.map((column) => (
+          <div key={column.key} className="flex flex-col gap-3">
             <p className="text-xs font-medium uppercase tracking-wide text-zinc-500">
               • {column.title}
             </p>
@@ -75,7 +81,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10 px-4 py-6 text-center text-xs text-zinc-500">
-        © {new Date().getFullYear()} Automatize Marketing. Todos os direitos reservados.
+        {t("copyright", { year: new Date().getFullYear() })}
       </div>
     </footer>
   );

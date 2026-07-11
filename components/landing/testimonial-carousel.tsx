@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 import { TestimonialVideo } from "@/components/landing/testimonial-video";
@@ -36,6 +37,7 @@ const PORTRAIT_TESTIMONIALS: Testimonial[] = [
 const SLIDES: Testimonial[][] = [[LANDSCAPE_TESTIMONIAL], PORTRAIT_TESTIMONIALS];
 
 export function TestimonialCarousel() {
+  const t = useTranslations("SocialProof.carousel");
   const [index, setIndex] = useState(0);
   const slide = SLIDES[index];
 
@@ -71,7 +73,7 @@ export function TestimonialCarousel() {
                   src={item.src}
                   poster={item.poster}
                   aspect={item.aspect}
-                  label={`Depoimento de cliente ${index === 0 ? 1 : i + 2}`}
+                  label={t("testimonial", { number: index === 0 ? 1 : i + 2 })}
                   className="flex-1"
                 />
               ))}
@@ -81,7 +83,7 @@ export function TestimonialCarousel() {
 
         <button
           type="button"
-          aria-label="Depoimento anterior"
+          aria-label={t("prev")}
           onClick={() => go(-1)}
           className="absolute left-0 top-1/2 flex size-9 -translate-x-4 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/90 shadow-sm backdrop-blur transition-all duration-200 ease-premium hover:scale-105 hover:bg-muted"
         >
@@ -89,7 +91,7 @@ export function TestimonialCarousel() {
         </button>
         <button
           type="button"
-          aria-label="Próximo depoimento"
+          aria-label={t("next")}
           onClick={() => go(1)}
           className="absolute right-0 top-1/2 flex size-9 -translate-y-1/2 translate-x-4 items-center justify-center rounded-full border border-border bg-background/90 shadow-sm backdrop-blur transition-all duration-200 ease-premium hover:scale-105 hover:bg-muted"
         >
@@ -102,7 +104,7 @@ export function TestimonialCarousel() {
           <button
             key={i}
             type="button"
-            aria-label={`Ir para o grupo de depoimentos ${i + 1}`}
+            aria-label={t("goTo", { number: i + 1 })}
             onClick={() => setIndex(i)}
             className={cn(
               "h-1.5 rounded-full transition-all duration-300 ease-premium",
