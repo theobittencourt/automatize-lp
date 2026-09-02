@@ -25,6 +25,30 @@
       "trial": "7 dias grátis",
       "noFee": "Sem multa de cancelamento",
       "easySetup": "Implementação descomplicada"
+    },
+    "variants": {
+      "v1": {
+        "headlineLine1": "AUMENTE O SEU FATURAMENTO",
+        "headlineLine2": "SEM DEPENDER DE AGÊNCIAS AMADORAS",
+        "aiLine": "A 1ª IA que faz e gerencia todo o seu Tráfego Pago e Marketing de forma 100% Automática.",
+        "resultLine": "Mais Resultados, e Menos Estresse com serviços que cobram alto e não entregam resultado"
+      },
+      "v2": {
+        "headlineLine1": "VENDA MAIS TODOS OS DIAS",
+        "headlineLine2": "SEM PRECISAR DE AGÊNCIAS AMADORAS",
+        "aiLine": "A 1ª IA que faz e gerencia todo o seu Tráfego Pago e Marketing de forma 100% Automática.",
+        "resultLine": "Mais Resultados, e Menos Estresse com serviços que cobram alto e não entregam resultado"
+      }
+    }
+  },
+  "Mat": {
+    "heading": "Conheça o Mat, o seu Consultor Inteligente que:",
+    "imageAlt": "Mat, o consultor inteligente da Automatize",
+    "bullets": {
+      "estrategia": "Te direciona com estratégias que funcionam",
+      "resposta": "Responde imediatamente",
+      "relatorios": "Envia relatórios",
+      "campanhas": "Cria suas campanhas e realiza alterações imediatas"
     }
   },
   "SocialProof": {

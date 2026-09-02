@@ -6,7 +6,11 @@ import { Reveal } from "@/components/landing/reveal";
 import { Highlight } from "@/components/landing/highlight";
 import { HeroMockup } from "@/components/landing/hero-mockup";
 
-export async function Hero() {
+type HeroProps = {
+  variant?: "v1" | "v2";
+};
+
+export async function Hero({ variant }: HeroProps) {
   const t = await getTranslations("Hero");
 
   const guarantees = [
@@ -27,18 +31,46 @@ export async function Hero() {
         }}
       />
 
-      <Reveal delay={0.05}>
-        <h1 className="font-body text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-          {t.rich("headline", {
-            highlight: (chunks) => <Highlight>{chunks}</Highlight>,
-            highlight2: (chunks) => <Highlight>{chunks}</Highlight>,
-          })}
-        </h1>
-      </Reveal>
+      {variant ? (
+        <>
+          <Reveal delay={0.05}>
+            <h1 className="font-body text-3xl font-bold uppercase leading-tight sm:text-4xl md:text-5xl">
+              {t(`variants.${variant}.headlineLine1`)}
+              <br />
+              <span className="text-brand">
+                {t(`variants.${variant}.headlineLine2`)}
+              </span>
+            </h1>
+          </Reveal>
 
-      <Reveal delay={0.1}>
-        <p className="max-w-2xl text-muted-foreground">{t("subtitle")}</p>
-      </Reveal>
+          <Reveal delay={0.1}>
+            <p className="max-w-2xl font-medium">
+              {t(`variants.${variant}.aiLine`)}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.12}>
+            <p className="max-w-2xl text-muted-foreground">
+              {t(`variants.${variant}.resultLine`)}
+            </p>
+          </Reveal>
+        </>
+      ) : (
+        <>
+          <Reveal delay={0.05}>
+            <h1 className="font-body text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
+              {t.rich("headline", {
+                highlight: (chunks) => <Highlight>{chunks}</Highlight>,
+                highlight2: (chunks) => <Highlight>{chunks}</Highlight>,
+              })}
+            </h1>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <p className="max-w-2xl text-muted-foreground">{t("subtitle")}</p>
+          </Reveal>
+        </>
+      )}
 
       <Reveal delay={0.15}>
         <div className="flex flex-col gap-3 sm:flex-row">

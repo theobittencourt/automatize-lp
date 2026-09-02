@@ -25,6 +25,30 @@
       "trial": "7 days free",
       "noFee": "No cancellation fee",
       "easySetup": "Effortless setup"
+    },
+    "variants": {
+      "v1": {
+        "headlineLine1": "INCREASE YOUR REVENUE",
+        "headlineLine2": "WITHOUT RELYING ON AMATEUR AGENCIES",
+        "aiLine": "The 1st AI that runs and manages all your Paid Ads and Marketing 100% automatically.",
+        "resultLine": "More Results, and Less Stress from services that charge a lot and don't deliver results"
+      },
+      "v2": {
+        "headlineLine1": "SELL MORE EVERY DAY",
+        "headlineLine2": "WITHOUT NEEDING AMATEUR AGENCIES",
+        "aiLine": "The 1st AI that runs and manages all your Paid Ads and Marketing 100% automatically.",
+        "resultLine": "More Results, and Less Stress from services that charge a lot and don't deliver results"
+      }
+    }
+  },
+  "Mat": {
+    "heading": "Meet Mat, your Smart Consultant, who:",
+    "imageAlt": "Mat, Automatize's smart consultant",
+    "bullets": {
+      "estrategia": "Guides you with strategies that work",
+      "resposta": "Replies instantly",
+      "relatorios": "Sends reports",
+      "campanhas": "Creates your campaigns and makes instant changes"
     }
   },
   "SocialProof": {
