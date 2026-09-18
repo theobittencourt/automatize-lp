@@ -1,5 +1,6 @@
 import { Reveal } from "@/components/landing/reveal";
 import { Highlight } from "@/components/landing/highlight";
+import { LogoMarquee } from "@/components/landing/logo-marquee";
 import { CaptureTestimonials } from "@/components/captura/capture-testimonials";
 
 export function CaptureSocialProof() {
@@ -14,15 +15,22 @@ export function CaptureSocialProof() {
             Mais de <Highlight>500 food services</Highlight> já confiam na
             Automatize
           </h2>
-          <p className="mt-4 text-muted-foreground">
-            Eles também pagavam caro por serviços de marketing amadores que
-            não geravam resultados. Hoje conseguem mais pedidos e mais lucro,
-            pagando muito menos.
-          </p>
         </div>
       </Reveal>
 
-      <Reveal delay={0.1} className="mt-10">
+      <Reveal delay={0.05} className="mt-8">
+        <LogoMarquee />
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <p className="mx-auto mt-8 max-w-2xl text-center text-muted-foreground">
+          Eles também pagavam caro por serviços de marketing amadores que não
+          geravam resultados. Hoje conseguem mais pedidos e mais lucro,
+          pagando muito menos.
+        </p>
+      </Reveal>
+
+      <Reveal delay={0.15} className="mt-10">
         <CaptureTestimonials />
       </Reveal>
     </section>
