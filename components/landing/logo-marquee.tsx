@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 
-type ClientLogo = {
+export type ClientLogo = {
   file: string;
   // logos com traço preto ficam invisíveis no dark mode / logos com traço
   // branco ficam invisíveis no light mode — invertemos só nesses casos.
@@ -46,11 +46,17 @@ function logoSrc(file: string) {
   return `/images/Logo dos Clientes/${encodeURIComponent(file)}`;
 }
 
-function LogoGroup({ innerRef }: { innerRef?: React.Ref<HTMLDivElement> }) {
+function LogoGroup({
+  innerRef,
+  logos,
+}: {
+  innerRef?: React.Ref<HTMLDivElement>;
+  logos: ClientLogo[];
+}) {
   const t = useTranslations("SocialProof");
   return (
     <div ref={innerRef} className="flex shrink-0 items-center gap-16">
-      {CLIENT_LOGOS.map((logo) => (
+      {logos.map((logo) => (
         <div key={logo.file} className="flex h-14 shrink-0 items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -68,7 +74,8 @@ function LogoGroup({ innerRef }: { innerRef?: React.Ref<HTMLDivElement> }) {
   );
 }
 
-export function LogoMarquee() {
+export function LogoMarquee({ extraLogos = [] }: { extraLogos?: ClientLogo[] }) {
+  const logos = [...CLIENT_LOGOS, ...extraLogos];
   const trackRef = useRef<HTMLDivElement>(null);
   const groupRef = useRef<HTMLDivElement>(null);
   const pausedRef = useRef(false);
@@ -109,8 +116,8 @@ export function LogoMarquee() {
       onMouseLeave={() => (pausedRef.current = false)}
     >
       <div ref={trackRef} className="flex w-max items-center gap-16">
-        <LogoGroup innerRef={groupRef} />
-        <LogoGroup />
+        <LogoGroup innerRef={groupRef} logos={logos} />
+        <LogoGroup logos={logos} />
       </div>
     </div>
   );
