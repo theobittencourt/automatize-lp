@@ -36,7 +36,12 @@ export function BlackLeadForm() {
         </div>
       ) : (
         <>
-          <h2 className="font-body text-2xl font-bold">Garanta a sua Black!</h2>
+          <h2 className="font-body text-2xl font-bold">
+            Garanta a sua{" "}
+            <span className="font-heading text-[1.2em] font-normal italic text-brand">
+              Black!
+            </span>
+          </h2>
           <p className="mt-1 text-sm text-muted-foreground">
             Fale com um consultor e tenha acesso ao Desconto!
           </p>

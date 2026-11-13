@@ -1,6 +1,7 @@
 import { ArrowUpRight, Gift } from "lucide-react";
 
 import { Reveal } from "@/components/landing/reveal";
+import { Highlight } from "@/components/landing/highlight";
 import { BlackLeadForm } from "@/components/black/black-lead-form";
 
 const GIFTS = [
@@ -24,7 +25,7 @@ export function BlackHero() {
       {/* Glow roxo com textura atrás do headline (mesma linguagem do hero da home) */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-10 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full opacity-50 blur-2xl sm:top-0 sm:h-[520px] sm:w-[520px] sm:-translate-y-1/4 sm:opacity-35 sm:blur-3xl lg:left-[30%] lg:h-[460px] lg:w-[460px] lg:-translate-y-1/3 lg:opacity-25"
+        className="pointer-events-none absolute left-1/2 top-10 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full opacity-30 blur-2xl sm:top-0 sm:h-[520px] sm:w-[520px] sm:-translate-y-1/4 sm:opacity-35 sm:blur-3xl lg:left-[30%] lg:h-[460px] lg:w-[460px] lg:-translate-y-1/3 lg:opacity-25"
         style={{
           backgroundImage: "url(/images/textures/gradient-1.jpg)",
           backgroundSize: "cover",
@@ -34,7 +35,7 @@ export function BlackHero() {
       {/* Grade sutil, esmaecida nas bordas */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.07]"
+        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.045]"
         style={{
           backgroundImage:
             "linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)",
@@ -59,23 +60,33 @@ export function BlackHero() {
                 <span className="absolute inline-flex size-full animate-pulse-ring rounded-full bg-brand" />
                 <span className="relative inline-flex size-2 rounded-full bg-brand" />
               </span>
-              Black Friday Automatize • Só em novembro
+              <span>
+                <strong className="font-extrabold uppercase tracking-wider text-foreground">
+                  Black Friday
+                </strong>{" "}
+                Automatize • Só em novembro
+              </span>
             </span>
           </Reveal>
 
           <Reveal delay={0.05}>
-            <h1 className="mt-6 font-body text-[2.5rem] font-bold uppercase leading-[1.05] sm:text-6xl lg:text-7xl">
+            {/* Mesma tipografia do hero da home: Urbane bold em caixa normal + destaques em serifada itálica */}
+            <h1 className="mt-6 font-body text-[2.5rem] font-bold leading-[1.1] sm:text-6xl lg:text-7xl">
               O seu{" "}
-              <span className="block font-heading text-[1.15em] font-normal normal-case italic leading-none text-brand sm:inline sm:text-[1em] sm:leading-[inherit]">
-                marketing
-              </span>
+              <Highlight>
+                <span className="block text-[1.2em] leading-none sm:inline sm:text-[1em] sm:leading-[inherit]">
+                  marketing
+                </span>
+              </Highlight>
               <br className="hidden sm:block" />
               {/* No mobile "30% off" vira o destaque da tela (maior, em linha própria) */}
-              <span className="mt-1 block whitespace-nowrap bg-gradient-to-r from-brand via-brand to-white bg-clip-text text-transparent sm:mt-0 sm:inline">
+              <span className="mt-1 block whitespace-nowrap sm:mt-0 sm:inline">
                 <span className="block sm:inline">com</span>{" "}
-                <span className="block text-[1.7em] leading-[0.95] sm:inline sm:text-[1em] sm:leading-[inherit]">
-                  30% off
-                </span>
+                <Highlight>
+                  <span className="block text-[1.9em] leading-[0.95] sm:inline sm:text-[1em] sm:leading-[inherit]">
+                    30% off
+                  </span>
+                </Highlight>
               </span>
             </h1>
           </Reveal>
@@ -83,7 +94,13 @@ export function BlackHero() {
           <Reveal delay={0.1}>
             <p className="mt-8 flex items-center justify-center gap-3 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:text-sm lg:justify-start">
               <span className="hidden h-px w-8 bg-gradient-to-r from-transparent to-brand lg:block" />
-              Nesta Black você ganha gratuitamente também
+              <span>
+                Nesta{" "}
+                <span className="font-heading text-lg font-normal normal-case italic text-brand">
+                  Black
+                </span>{" "}
+                você ganha gratuitamente também
+              </span>
             </p>
           </Reveal>
 
