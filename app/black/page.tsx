@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import { BlackHeader } from "@/components/black/black-header";
 import { BlackHero } from "@/components/black/black-hero";
+import { BlackTicker } from "@/components/black/black-ticker";
+import { BlackFinalCta } from "@/components/black/black-final-cta";
 import { BlackCalculator } from "@/components/black/black-calculator";
 import { BlackSocialProof } from "@/components/black/black-social-proof";
 import { BlackFaq } from "@/components/black/black-faq";
@@ -21,9 +23,11 @@ export default function BlackPage() {
       <BlackHeader />
       <main>
         <BlackHero />
+        <BlackTicker />
         <BlackCalculator />
         <BlackSocialProof />
         <BlackFaq />
+        <BlackFinalCta />
       </main>
       <BlackFooter />
     </div>

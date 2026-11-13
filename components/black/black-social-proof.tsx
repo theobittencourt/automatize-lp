@@ -32,10 +32,15 @@ export function BlackSocialProof() {
   return (
     <section
       id="depoimentos"
-      className="mx-auto flex max-w-5xl scroll-mt-20 flex-col items-center gap-10 px-4 py-16 sm:py-24"
+      className="relative isolate scroll-mt-20 border-y border-border/60 bg-gradient-to-b from-brand/[0.06] via-transparent to-brand/[0.06]"
     >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 mx-auto h-72 w-[40rem] max-w-full rounded-full bg-brand/15 blur-3xl"
+      />
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-10 px-4 py-16 sm:py-24">
       <Reveal>
-        <h2 className="text-center font-body text-2xl font-bold sm:text-3xl">
+        <h2 className="text-center font-body text-2xl font-bold sm:text-4xl">
           Mais de <Highlight>500 restaurantes</Highlight> confiam na Automatize
         </h2>
       </Reveal>
@@ -55,6 +60,7 @@ export function BlackSocialProof() {
       <Reveal delay={0.15} className="w-full">
         <CaptureTestimonials videos={NEW_TESTIMONIALS} />
       </Reveal>
+      </div>
     </section>
   );
 }

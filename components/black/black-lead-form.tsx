@@ -6,7 +6,7 @@ import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const inputClass =
-  "w-full rounded-xl border border-input bg-background/60 px-4 py-2.5 text-sm outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-brand";
+  "w-full rounded-xl border border-input bg-background/60 px-4 py-2.5 text-sm outline-none transition-all placeholder:text-muted-foreground/60 focus:border-brand focus:ring-4 focus:ring-brand/15";
 
 const labelClass =
   "flex flex-col gap-1.5 text-xs font-medium uppercase tracking-wide text-muted-foreground";
@@ -17,8 +17,14 @@ export function BlackLeadForm() {
   return (
     <div
       id="garanta"
-      className="scroll-mt-28 rounded-3xl border border-brand/30 bg-card p-6 shadow-2xl shadow-brand/10 sm:p-8"
+      className="relative scroll-mt-28 rounded-3xl bg-gradient-to-b from-brand/70 via-brand/15 to-brand/40 p-px shadow-xl shadow-brand/10"
     >
+      <div className="relative overflow-hidden rounded-[calc(1.5rem-1px)] bg-card p-6 sm:p-8">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-16 -top-16 size-40 rounded-full bg-brand/10 blur-3xl"
+        />
+        <div className="relative">
       {submitted ? (
         <div className="flex flex-col items-center gap-3 py-10 text-center">
           <CheckCircle2 className="size-12 text-brand" />
@@ -77,13 +83,15 @@ export function BlackLeadForm() {
             <Button
               type="submit"
               size="lg"
-              className="mt-2 w-full bg-brand text-brand-foreground hover:bg-brand/90"
+              className="mt-2 w-full bg-brand text-brand-foreground shadow-lg shadow-brand/30 transition-shadow hover:bg-brand/90 hover:shadow-xl hover:shadow-brand/40"
             >
               Quero 30% OFF
             </Button>
           </form>
         </>
       )}
+        </div>
+      </div>
     </div>
   );
 }

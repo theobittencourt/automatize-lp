@@ -76,6 +76,24 @@
 
   --animate-accordion-down: accordion-down 0.3s var(--ease-premium);
   --animate-accordion-up: accordion-up 0.25s var(--ease-premium);
+  --animate-ticker: ticker 40s linear infinite;
+  --animate-pulse-ring: pulse-ring 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes ticker {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes pulse-ring {
+    75%,
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
+  }
 
   @keyframes accordion-down {
     from {
