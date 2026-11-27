@@ -5,7 +5,7 @@ import { CaptureTestimonials } from "@/components/captura/capture-testimonials";
 
 // Logos novos do Drive (campanha Black). Os demais vêm do LogoMarquee padrão,
 // igual ao site oficial. "La Brasa" é branca, por isso inverte no tema claro.
-const NEW_LOGOS: ClientLogo[] = [
+export const NEW_LOGOS: ClientLogo[] = [
   { file: "la-brasa-trimmed.png", invert: "light" },
   { file: "midnight-trimmed.png" },
   { file: "lessas-trimmed.png" },
@@ -13,7 +13,7 @@ const NEW_LOGOS: ClientLogo[] = [
 ];
 
 // Apenas os depoimentos novos do Drive (todos 9:16).
-const NEW_TESTIMONIALS = [
+export const NEW_TESTIMONIALS = [
   {
     src: "/images/depoimentos/depoimento-midnight.mp4",
     poster: "/images/depoimentos/depoimento-midnight-poster.jpg",

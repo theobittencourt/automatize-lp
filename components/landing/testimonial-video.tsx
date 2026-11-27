@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Volume2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -12,6 +12,8 @@ type TestimonialVideoProps = {
   aspect?: string;
   label: string;
   className?: string;
+  // para listas com muitos vídeos: só baixa e toca o que está visível na tela
+  playWhenVisible?: boolean;
 };
 
 export function TestimonialVideo({
@@ -20,14 +22,43 @@ export function TestimonialVideo({
   aspect,
   label,
   className,
+  playWhenVisible = false,
 }: TestimonialVideoProps) {
   const t = useTranslations("SocialProof.carousel");
   const videoRef = useRef<HTMLVideoElement>(null);
   const [active, setActive] = useState(false);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!playWhenVisible || !video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.intersectionRatio < 0.6) {
+          video.pause();
+        } else if (video.muted) {
+          // com som ligado, quem decide dar play de novo é o visitante.
+          // O play() pode ser recusado pelo navegador (ex.: economia de dados).
+          video.play().catch(() => {});
+        }
+      },
+      { threshold: [0, 0.6] }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, [playWhenVisible]);
+
   function handleActivate() {
     const video = videoRef.current;
     if (!video) return;
+
+    if (playWhenVisible) {
+      // evita dois depoimentos com áudio ao mesmo tempo
+      document.querySelectorAll("video").forEach((other) => {
+        if (other !== video && !other.muted) other.pause();
+      });
+    }
 
     video.currentTime = 0;
     video.muted = false;
@@ -49,12 +80,12 @@ export function TestimonialVideo({
         className="size-full object-cover"
         src={src}
         poster={poster}
-        autoPlay
+        autoPlay={!playWhenVisible}
         muted
         loop
         playsInline
         controls={active}
-        preload="metadata"
+        preload={playWhenVisible ? "none" : "metadata"}
         aria-label={label}
         onPause={() => {
           if (videoRef.current?.ended) setActive(false);
