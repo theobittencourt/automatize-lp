@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/landing/reveal";
 import { RestaurantesCtaButton } from "@/components/restaurantes/restaurantes-cta-button";
 
-// Fechamento no mesmo visual da /black, com o texto da referência.
+// Fechamento no mesmo visual da /black.
 export function RestaurantesFinalCta() {
   return (
     <section className="mx-auto max-w-5xl px-4 py-16 sm:py-24">
@@ -23,7 +23,7 @@ export function RestaurantesFinalCta() {
           />
 
           <h2 className="mx-auto max-w-3xl text-balance font-body text-2xl font-bold leading-tight sm:text-4xl">
-            Enquanto você cuida de entregar, a gente cuida do caminho até o pedido.
+            Enquanto você cuida do preparo, a gente cuida do cliente até o pedido.
           </h2>
           <div className="mt-8 flex justify-center">
             <RestaurantesCtaButton className="w-full text-center sm:w-auto" />

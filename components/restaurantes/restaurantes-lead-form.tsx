@@ -28,14 +28,18 @@ const FIELDS = [
     placeholder: "@seurestaurante",
     autoComplete: "off",
   },
-  {
-    name: "faturamento",
-    label: "Média de faturamento",
-    type: "text",
-    placeholder: "Ex.: R$ 35.000 por mês",
-    autoComplete: "off",
-  },
 ];
+
+const REVENUE_OPTIONS = [
+  "Menos de R$10 mil",
+  "De R$10 a R$20 mil",
+  "De R$20 a R$40 mil",
+  "De R$40 a R$80 mil",
+  "De R$80 a R$100 mil",
+  "Mais de R$100 mil",
+];
+
+const fieldLabelClass = "text-[10px] font-semibold uppercase tracking-[0.1em]";
 
 export function RestaurantesLeadForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -74,10 +78,7 @@ export function RestaurantesLeadForm() {
           }}
         >
           {FIELDS.map((field) => (
-            <label
-              key={field.name}
-              className="flex flex-col gap-2 text-[10px] font-semibold uppercase tracking-[0.1em]"
-            >
+            <label key={field.name} className={cn("flex flex-col gap-2", fieldLabelClass)}>
               {field.label}
               <input
                 required
@@ -92,7 +93,28 @@ export function RestaurantesLeadForm() {
             </label>
           ))}
 
-          <button type="submit" className={cn(ctaClass, "mt-1 w-full justify-between text-left")}>
+          <fieldset onChange={() => setSubmitted(false)}>
+            <legend className={cn("mb-2", fieldLabelClass)}>Média de faturamento</legend>
+            <div className="grid grid-cols-2 gap-2">
+              {REVENUE_OPTIONS.map((option) => (
+                <label key={option} className="relative flex cursor-pointer">
+                  {/* radio escondido só visualmente: teclado e validação continuam */}
+                  <input
+                    required
+                    type="radio"
+                    name="faturamento"
+                    value={option}
+                    className="peer sr-only"
+                  />
+                  <span className="flex w-full items-center justify-center rounded-lg border border-border bg-black/30 px-1 py-3 text-center text-[11px] leading-snug sm:px-2 sm:text-xs text-muted-foreground transition-all hover:border-[#766cf0]/60 hover:text-foreground peer-checked:border-[#766cf0] peer-checked:bg-[#766cf0]/20 peer-checked:font-semibold peer-checked:text-foreground peer-focus-visible:ring-4 peer-focus-visible:ring-[#766cf0]/30">
+                    {option}
+                  </span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+
+          <button type="submit" className={cn(ctaClass, "mt-1 w-full")}>
             {CTA_LABEL}
             <ArrowUpRight />
           </button>
