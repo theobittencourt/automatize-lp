@@ -13,7 +13,7 @@ export const NEW_LOGOS: ClientLogo[] = [
 ];
 
 // Apenas os depoimentos novos do Drive (todos 9:16).
-export const NEW_TESTIMONIALS = [
+const NEW_TESTIMONIALS = [
   {
     src: "/images/depoimentos/depoimento-midnight.mp4",
     poster: "/images/depoimentos/depoimento-midnight-poster.jpg",

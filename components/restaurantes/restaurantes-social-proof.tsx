@@ -1,20 +1,25 @@
 import { Reveal } from "@/components/landing/reveal";
 import { Highlight } from "@/components/landing/highlight";
 import { LogoMarquee } from "@/components/landing/logo-marquee";
-import { NEW_LOGOS, NEW_TESTIMONIALS } from "@/components/black/black-social-proof";
+import { NEW_LOGOS } from "@/components/black/black-social-proof";
 import { TestimonialSlider } from "@/components/restaurantes/testimonial-slider";
 
-const testimonial = (name: string) => ({
-  src: `/images/depoimentos/depoimento-${name}.mp4`,
-  poster: `/images/depoimentos/depoimento-${name}-poster.jpg`,
+const testimonial = (file: string, name: string, business: string) => ({
+  src: `/images/depoimentos/depoimento-${file}.mp4`,
+  poster: `/images/depoimentos/depoimento-${file}-poster.jpg`,
+  name,
+  business,
 });
 
 const TESTIMONIALS = [
-  ...NEW_TESTIMONIALS, // os três da /black primeiro: Midnight, Lessa e Letícia
-  testimonial("1"), // Dudu Bastos
-  testimonial("2"), // Guilherme (Santo Burger)
-  testimonial("4"), // Matheus Branco
-  testimonial("junqueira"), // Tiago Junqueira
+  // os três da /black primeiro
+  testimonial("midnight", "Gabriel", "Midnight"),
+  testimonial("lessa", "Tiago Lessa", "Lessa's Tapioca & Burguer"),
+  testimonial("leticia", "Letícia Nascimento", "Let's Burguer"),
+  testimonial("1", "Dudu Bastos", "Larica"),
+  testimonial("2", "Guilherme", "Santo Burger"),
+  testimonial("4", "Matheus Branco", "Gibbous Burger"),
+  testimonial("junqueira", "Tiago Junqueira", "La Brasa"),
 ];
 
 // Mesma seção de prova social da /black, trocando a grade de 3 vídeos por um
